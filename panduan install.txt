@@ -1,0 +1,48 @@
+## Panduan Instalasi
+
+1.  **Clone atau Unduh Proyek**
+    -   Letakkan semua file proyek di dalam direktori web server Anda (misalnya: `C:/xampp/htdocs/laporan-keuangan`).
+
+2.  **Buat Database**
+    -   Buka phpMyAdmin.
+    -   Buat database baru dengan nama `db_keuangan_pro`.
+    -   Pilih database tersebut, buka tab **SQL**, dan jalankan query dari file `database.sql` yang telah disediakan untuk membuat semua tabel yang diperlukan.
+
+3.  **Konfigurasi Database**
+    -   Buka file `config/database.php`.
+    -   Sesuaikan nilai `DB_HOST`, `DB_USER`, `DB_PASS`, dan `DB_NAME` dengan pengaturan database lokal Anda.
+    ```php
+    define('DB_HOST', 'localhost');
+    define('DB_USER', 'root');
+    define('DB_PASS', ''); // Kosongkan jika tidak ada password
+    define('DB_NAME', 'db_keuangan_pro');
+    ```
+
+4.  **Jalankan Aplikasi**
+    -   Buka browser dan akses proyek melalui URL: `http://localhost/laporan-keuangan/`.
+    -    login menggunakan  username : admin Password : admin123
+
+
+
+
+# Aplikasi Laporan Keuangan PHP & MySQL
+
+Aplikasi web sederhana untuk mencatat dan mengelola laporan pemasukan dan pengeluaran pribadi atau usaha kecil. Dibangun dengan PHP native, MySQL, dan Bootstrap 5.
+
+## Fitur Utama
+
+-   **Sistem Otentikasi**: Registrasi dan Login admin yang aman menggunakan `password_hash`.
+-   **Dashboard**: Ringkasan finansial (total pemasukan, pengeluaran, dan saldo).
+-   **Manajemen Transaksi**: CRUD (Create, Read, Update, Delete) untuk data pemasukan dan pengeluaran.
+-   **Manajemen Kategori**: Kelola kategori untuk setiap jenis transaksi.
+-   **Filter Data**: Saring transaksi berdasarkan rentang tanggal.
+-   **Laporan Visual**: Laporan bulanan dengan grafik (Chart.js) untuk visualisasi data.
+-   **Desain Responsif**: Tampilan modern dan ramah perangkat mobile dengan Bootstrap 5.
+
+## Persyaratan
+
+-   Web Server (XAMPP, WAMP, MAMP, dll.)
+-   PHP 7.4 atau lebih baru
+-   MySQL / MariaDB
+-   Web Browser (Chrome, Firefox, dll.)
+

@@ -1,5 +1,6 @@
 <?php
-
+echo "Test";
+exit;
 // File: index.php (Dashboard)
 
 // 1. Sertakan konfigurasi dan mulai sesi
@@ -108,3 +109,4 @@ $result_transaksi = $stmt->get_result();
 </div>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
+
